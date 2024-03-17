@@ -1,0 +1,73 @@
+.Form_inputBanner{
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    box-shadow: 0 8px 5px rgba(0,0,0,0.1), 0 -1px 5px rgba(0,0,0,0.1); 
+    background-color:white;
+    padding-left: var(--contentLeftMargin);
+    justify-content: center;
+}
+
+.Form_inputContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.Form_leftInputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.Form_rightInputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: var(--contentLeftMargin);
+    margin-right: var(--contentLeftMargin);
+}
+
+.Form_inputBox{
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border-width: 1px;
+    margin-bottom: 10px;
+    border-color: #E5E7EB;
+    padding-left: 10px;
+}
+
+.Form_inputBox:focus{
+    outline: none;
+    border-color: blue;
+    box-shadow: 3px 3px 3px #dfe0e1;
+}
+
+.Form_inputBox.error{
+    border-color: red;
+}
+
+.Form_text{
+    font-size:26px;
+    font-weight: bold;
+}
+
+.Form_text.margin-bottom{
+    margin-bottom: 20px;
+}
+
+.Form_submitButton{
+    margin-left: var(--contentLeftMargin);
+    margin-top: 30px;
+    height: 48px;
+    width: 220px;
+    border-radius: 7px;
+    background-color: #596D48;
+    color: white;
+    box-shadow: 2px 2px 5px #dfe0e1;
+    font-weight: bold;
+    font-size: 16px;
+    border-style: none;
+}

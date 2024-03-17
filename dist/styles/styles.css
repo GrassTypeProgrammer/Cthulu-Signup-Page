@@ -1,0 +1,76 @@
+
+.Root{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(250, 250, 255);
+
+}
+
+.Column{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.Column.flex{
+    flex: 1;
+}
+
+.Column.center{
+    justify-content: center;
+}
+
+.SideImg{
+    position: absolute;
+    height: 100%;
+    align-self: center;
+}
+
+.Text{
+    font-size: 20px;
+}
+
+
+.TopContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 70px 150px 70px var(--contentLeftMargin);
+    flex: 1;
+}
+
+.Text{
+    font-size:26px;
+}
+
+
+.Text.margin-bottom{
+    margin-bottom: 20px;
+}
+
+
+.BottomContent{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: var(--contentLeftMargin);
+    padding-top: 30px;
+}
+
+.AccountExists{
+    font-size: 18px;
+}
+
+.LoginLink{
+    color: #596D48;
+    font-weight: bold;
+}
+
+/* TODO: Put this into a seperate css file */
+@font-face {
+    font-family: logoFont;
+    src: url(../../fonts/Unutterable-Regular.ttf);
+  }

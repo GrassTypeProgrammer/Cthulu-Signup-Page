@@ -1,0 +1,25 @@
+
+.Logo_banner{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 15rem;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Logo_img{
+    width: 60px;
+    height: 60px;
+    filter: white;
+}
+
+.Logo_text{
+    color: black;
+    font-family: logoFont; 
+    font-size: 56px;   
+}

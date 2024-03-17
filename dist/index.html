@@ -4,8 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cthulu Sign Up</title>
+    <link href="styles/global.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+    <link href="styles/logo.css" rel="stylesheet">
 </head>
 <body>
+    
+    <div class="Root">
+        <div class="Column">
+            <img class="SideImg" src="../images/cthulhu.jpg" alt="Cthulu rising from the depths of the ocean as a giant octopus/squid creature and towering over a ship.">
+            <div class="Logo_banner">
+                <img class="Logo_img" src="../images/cthulhuIcon.png" alt="The website logo depicts cthulhu as a cute little octopus with wings.">
+                <div class="Logo_text">Cthulhu</div>
+            </div>
+        </div>
+        <div class="Column flex center">
+            <div class="TopContent">
+
+                <div class="Text">
+                    This is not a real service! You know you feel him calling! The great Cthuhlu awaits! Sign up now to start worshiping Cthuhlu!
+                </div>
+                <!-- TODO: Make the "you" bold. Figure out which method you should be using for that. -->
+                <div class="Text margin-bottom">
+                    So what are you waiting for?
+                </div>  
+                <!-- TODO: Make the "know" bold. Figure out which method you should be using for that. -->
+                <div class="Text">You know what to do.</div>
+            </div>
+
+            <div class="Form_root">
+                <div class="Form_inputBanner">
+                    <div class="Form_text">Let's do this!</div>
+                    <div class="Form_inputContainer">
+                        <div class="Form_leftInputs">
+                            <!-- TODO: Check if names should have a character limit -->
+                            <label for="firstName">First Name</label>
+                            <input class="Form_inputBox" type="text" id="firstName" placeholder="Eg: John" maxlength="75" required>
+                    
+                            <label for="email">Email Address</label>
+                            <input class="Form_inputBox" type="email" id="email" placeholder="Eg: callofcthulhu@gmail.com">
+                    
+                            <label for="password">Password</label>
+                            <input class="Form_inputBox" type="password" id="password" required>
+                        </div>
+                        <div class="Form_rightInputs">
+                            <label for="lastName">Last Name</label>
+                            <input class="Form_inputBox" type="text" id="lastName" placeholder="Eg: Smith" maxlength="75">
+                    
+                            <label for="mobile">Mobile Number</label>
+                            <input class="Form_inputBox" type="tel" id="mobile" placeholder="Eg: 002000202">
+                    
+                            <!-- TODO: see how to make these passwords match before submitting -->
+                            <label for="password">Confirm Password</label>
+                            <input class="Form_inputBox" type="password" id="passwordConfirm" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="Form_submitButton">Create Account</button>
+            </div>
+            <div class="BottomContent">
+
+                <span class="AccountExists">Already have an account? <a class="LoginLink" href="www.google.co.uk">Log in.</a></span>
+            </div>
+
+        </div>
+    </div>
+    
     <script src="main.js"></script>
     
 </body>

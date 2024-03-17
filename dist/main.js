@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("const div = document.createElement('div');\ndiv.innerText = 'test';\ndocument.documentElement.appendChild(div);\n\n//# sourceURL=webpack://cthulu-signup-page/./src/index.js?");
+eval("// const div = document.createElement('div');\n// div.innerText = 'test';\n// document.documentElement.appendChild(div);\n\n//# sourceURL=webpack://cthulu-signup-page/./src/index.js?");
 
 /***/ })
 
