@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-- Attribute these properly:
+- (Done) Attribute these properly:
     - Cthulhu image:
         <a href="https://pixabay.com/users/akadarcee-76024/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8196877">A. M. Cranston</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8196877">Pixabay</a>
 
