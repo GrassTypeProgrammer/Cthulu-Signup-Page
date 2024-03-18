@@ -1,14 +1,14 @@
 .Form_inputBanner{
     display: flex;
     flex-direction: column;
-    height: 280px;
+    height: 300px;
     box-shadow: 0 8px 5px rgba(0,0,0,0.1), 0 -1px 5px rgba(0,0,0,0.1); 
     background-color:white;
     padding-left: var(--contentLeftMargin);
     justify-content: center;
 }
 
-.Form_inputContainer{
+.Form_inputs{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
@@ -29,14 +29,26 @@
     margin-right: var(--contentLeftMargin);
 }
 
+.Form_inputContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    padding-bottom: 17px;
+    position: relative;
+}
+
 .Form_inputBox{
     height: 30px;
     width: 250px;
     border-radius: 5px;
     border-width: 1px;
-    margin-bottom: 10px;
     border-color: #E5E7EB;
     padding-left: 10px;
+    border-style: solid;
+}
+
+.Form_inputBox:invalid{
+    border-color: red;
 }
 
 .Form_inputBox:focus{
@@ -45,13 +57,18 @@
     box-shadow: 3px 3px 3px #dfe0e1;
 }
 
-.Form_inputBox.error{
-    border-color: red;
-}
 
 .Form_text{
     font-size:26px;
     font-weight: bold;
+}
+
+.Form_requiredLabel{
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .Form_text.margin-bottom{
@@ -66,8 +83,21 @@
     border-radius: 7px;
     background-color: #596D48;
     color: white;
-    box-shadow: 2px 2px 5px #dfe0e1;
+    box-shadow: 0 4px 5px #aaabad;
     font-weight: bold;
     font-size: 16px;
     border-style: none;
 }
+
+.Form_submitButton:hover{
+    background-color: #435236;
+    cursor: pointer;
+}
+
+.Form_submitButton:active{
+    background-color: #2e3925;
+}
+
+/* .Form_submitButton:disabled{
+    background-color: gray;
+} */
