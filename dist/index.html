@@ -25,60 +25,57 @@
                 <div class="Text">
                     This is not a real service! You know you feel him calling! The great Cthuhlu awaits! Sign up now to start worshiping Cthuhlu!
                 </div>
-                <!-- TODO: Make the "you" bold. Figure out which method you should be using for that. -->
                 <div class="Text margin-bottom">
-                    So what are you waiting for?
+                    So what are <em>you</em> waiting for?
                 </div>  
-                <!-- TODO: Make the "know" bold. Figure out which method you should be using for that. -->
-                <div class="Text">You know what to do.</div>
+                <div class="Text">You <em>know</em> what to do.</div>
             </div>
             
             <form id="form" class="Form_root" method="post" action="https://httpbin.org/post">
                 <div class="Form_inputBanner">
                     <div class="Form_text">Let's do this!</div>
                     <div class="Form_inputs">
-                        <div class="Form_leftInputs">
-                            <!-- TODO: Check if names should have a character limit -->
+                        
+                        <div class="Form_row">
                             <div class="Form_inputContainer">
                                 <label for="firstName">First Name</label>
-                                <input class="Form_inputBox" type="text" id="firstName" placeholder="Eg: John" maxlength="75" required>
+                                <input class="Form_inputBox" type="text" id="firstName" name="firstName" placeholder="Eg: John" maxlength="40" required>
                                 <span id="firstNameRequired" class="Form_requiredLabel">* Required</label>
-                                </div>
-                                
-                                <div class="Form_inputContainer">
-                                    <label for="email">Email Address</label>
-                                    <input class="Form_inputBox" type="email" id="email" placeholder="Eg: callofcthulhu@gmail.com">
-                                </div>
-                                
-                                <div class="Form_inputContainer">
-                                    <label for="password">Password</label>
-                                    <input class="Form_inputBox" type="password" id="password" required minlength="6" 
-                                    maxlength="30"
-                                    >
-                                    <span id="passwordRequired" class="Form_requiredLabel">* Required</label>
-                                    </div>
-                                </div>
-                                <div class="Form_rightInputs">
-                                    <div class="Form_inputContainer">
-                                <label for="lastName">Last Name</label>
-                                <input class="Form_inputBox" type="text" id="lastName" placeholder="Eg: Smith" maxlength="75">
                             </div>
-                            
+                            <div class="Form_inputContainer">
+                                <label for="lastName">Last Name</label>
+                                <input class="Form_inputBox" type="text" id="lastName" name="lastName" placeholder="Eg: Smith" maxlength="40">
+                            </div>
+                        </div>
+
+                        <div class="Form_row">
+                            <div class="Form_inputContainer">
+                                <label for="email">Email Address</label>
+                                <input class="Form_inputBox" type="email" id="email" name="email" placeholder="Eg: callofcthulhu@gmail.com">
+                            </div>
                             <div class="Form_inputContainer">
                                 <label for="mobile">Mobile Number</label>
-                                <input class="Form_inputBox" type="tel" id="mobile" placeholder="Eg: 002000202">
+                                <input class="Form_inputBox" type="tel" id="mobile" name="mobile" placeholder="Eg: 002000202">
+                            </div>
+                        </div>
+
+                        <div class="Form_row">
+                            <div class="Form_inputContainer">
+                                <label for="password">Password</label>
+                                <input class="Form_inputBox" type="password" id="password" name="password" required minlength="6"
+                                maxlength="30">
+                                <span id="passwordRequired" class="Form_requiredLabel">* Required</label>
                             </div>
                             
                             <div class="Form_inputContainer">
-                                <!-- TODO: see how to make these passwords match before submitting -->
                                 <label for="passwordConfirm">Confirm Password</label>
-                                <input class="Form_inputBox" type="password" id="passwordConfirm" required minlength="6" maxlength="30">
+                                <input class="Form_inputBox" type="password" id="passwordConfirm" name="passwordConfirm" required minlength="6" maxlength="30">
                                 <span id="passwordConfirmRequired" class="Form_requiredLabel">* Required</label>
-                                </div>
                             </div>
+                        </div>
                     </div>
                 </div>
-                <button type="submit" class="Form_submitButton" >Create Account</button>
+                <button form="form" type="submit" class="Form_submitButton" >Create Account</button>
             </form>
             <div class="BottomContent">
                 <span class="AccountExists">Already have an account? <a class="LoginLink" href="www.google.co.uk">Log in.</a></span>

@@ -10,23 +10,14 @@
 
 .Form_inputs{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 20px;
 }
 
-.Form_leftInputs{
+.Form_row{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 40px;
-}
-
-.Form_rightInputs{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: var(--contentLeftMargin);
-    margin-right: var(--contentLeftMargin);
+    flex-direction: row;
+    gap: 60px;
 }
 
 .Form_inputContainer{
@@ -98,6 +89,3 @@
     background-color: #2e3925;
 }
 
-/* .Form_submitButton:disabled{
-    background-color: gray;
-} */
